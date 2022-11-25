@@ -9,10 +9,6 @@ const app = express()
 const router = express.Router()
 app.use(router)
 app.use(express.json())
-app.use(
-    express.urlencoded({
-        extended: true,
-    }))
 
 // using the routes for a specific api
 app.use('/api/v1/distance', distanceRoutes)
